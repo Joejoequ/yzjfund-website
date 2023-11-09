@@ -1,6 +1,9 @@
 (function ($) {
     "use strict";
 
+
+
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -98,4 +101,15 @@
     });
     
 })(jQuery);
+
+$(document).ready(function () {
+    $("#test").click(function () {
+        $(".pop").fadeIn(300);
+        positionPopup();
+    });
+
+    $(".pop > span, .pop").click(function () {
+        $(".pop").fadeOut(300);
+    });
+});
 
