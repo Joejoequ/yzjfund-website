@@ -692,3 +692,21 @@
 .scroll-locked {
     overflow: hidden;
 }
+
+@media (min-width: 992px) {
+    .custom-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.team-name {
+    background-color: #f6f6f6;
+}
+
+.team-margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
