@@ -102,14 +102,44 @@
     
 })(jQuery);
 
-$(document).ready(function () {
-    $("#test").click(function () {
-        $(".pop").fadeIn(300);
-        positionPopup();
-    });
+function toggle(num){
+    var blur=document.getElementById('blur');
+    blur.classList.toggle("active");
 
-    $(".pop > span, .pop").click(function () {
-        $(".pop").fadeOut(300);
-    });
-});
+    var popup=document.getElementById('popup'+num.toString());
+    popup.classList.toggle("active")
+
+}
+
+const body = document.body;
+
+// 锁定滚轮的函数
+function lockScroll() {
+    body.classList.add("scroll-locked");
+
+
+}
+
+// 解锁滚轮的函数
+function unlockScroll() {
+    body.classList.remove("scroll-locked");
+}
+
+
+const elementsWithPop = document.getElementsByClassName("popBtn");
+
+for (let i = 0; i < elementsWithPop.length; i++) {
+    const element = elementsWithPop[i];
+    // 在这里你可以对元素进行任何操作，例如修改内容或样式
+    element.addEventListener("click", lockScroll);
+}
+const elementsWithPopClose = document.getElementsByClassName("popCloseBtn");
+
+for (let i = 0; i < elementsWithPopClose.length; i++) {
+    const element = elementsWithPopClose[i];
+    // 在这里你可以对元素进行任何操作，例如修改内容或样式
+    element.addEventListener("click", unlockScroll);
+}
+
+
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>前海扬子江基金管理有限公司</title>
+    <title>前海扬子江基金管理（深圳）有限公司</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -38,6 +38,7 @@
 
 
 
+
     <!--引用高德API-->
 
     <script src="js/map.js" type="text/javascript" ></script>
@@ -54,6 +55,7 @@
 </head>
 
 <body>
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -111,40 +113,12 @@
     </nav>
     <!-- Navbar End -->
 
-
+    <div id="blur" >
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5" id="index">
         <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">前海扬子江基金管理（深圳）有限公司</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">专业管理，卓越成就</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">扬子江基金是一家聚焦中国本土硬科技发展、深耕产业价值投资的早中期创投机构，公司在半导体、新材料、先进制造领域积累了丰富的产业资源和投资案例</p>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">前海扬子江基金管理（深圳）有限公司</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">赋能产业，深耕价值投资</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">扬子江基金是一家聚焦中国本土硬科技发展、深耕产业价值投资的早中期创投机构，公司在半导体、新材料、先进制造领域积累了丰富的产业资源和投资案例</p>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-3.jpg" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
@@ -334,7 +308,7 @@
                         <div class="text-start">
                             <h1 class="display-5 mb-4">新闻中心</h1>
                         </div>
-                        <p class="mb-4 pb-2"> 111111111111111</p>
+                        <p class="mb-4 pb-2"></p>
 
                     </div>
                 </div>
@@ -363,7 +337,7 @@
                             <img class="img-fluid w-100" src="img/project1.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('1')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -378,7 +352,7 @@
                             <img class="img-fluid w-100" src="img/project2.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('2')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -393,7 +367,7 @@
                             <img class="img-fluid w-100" src="img/project3.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('3')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -408,7 +382,7 @@
                             <img class="img-fluid w-100" src="img/project4.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('4')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -423,7 +397,7 @@
                             <img class="img-fluid w-100" src="img/project5.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('5')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -438,7 +412,7 @@
                             <img class="img-fluid w-100" src="img/project6.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('6')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -454,7 +428,7 @@
                             <img class="img-fluid w-100" src="img/project7.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('7')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -470,7 +444,7 @@
                             <img class="img-fluid w-100" src="img/project8.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('8')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -486,7 +460,7 @@
                             <img class="img-fluid w-100" src="img/project9.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('9')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -503,7 +477,7 @@
                             <img class="img-fluid w-100" src="img/project10.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('10')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -519,7 +493,7 @@
                             <img class="img-fluid w-100" src="img/project11.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('11')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -536,7 +510,7 @@
                             <img class="img-fluid w-100" src="img/project12.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('12')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -554,7 +528,7 @@
                             <img class="img-fluid w-100" src="img/project13.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('13')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -572,7 +546,7 @@
                             <img class="img-fluid w-100" src="img/project14.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('14')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -590,7 +564,7 @@
                             <img class="img-fluid w-100" src="img/project15.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('15')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -608,7 +582,7 @@
                             <img class="img-fluid w-100" src="img/project16.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('16')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -626,7 +600,7 @@
                             <img class="img-fluid w-100" src="img/project17.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('17')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -644,7 +618,7 @@
                             <img class="img-fluid w-100" src="img/project18.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('18')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -662,7 +636,7 @@
                             <img class="img-fluid w-100" src="img/project19.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <btn class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('19')"><i class="fa fa-link"></i></btn>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -679,7 +653,7 @@
                             <img class="img-fluid w-100" src="img/project20.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <button class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('20')"><i class="fa fa-link"></i></button>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -695,7 +669,7 @@
                             <img class="img-fluid w-100" src="img/project21.png" alt="">
                             <div class="portfolio-overlay">
 
-                                <button id="test" class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></button>
+                                <button  id="popupbtn" class="btn btn-square btn-outline-light mx-1 popBtn" onclick="toggle('21')"><i class="fa fa-link"></i></button>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -712,13 +686,8 @@
     <!-- Projects End -->
 
 
-    <div class="pop">
-        <span>✖</span>
-        <h1>jQuery Pop Up</h1>
-        <p>This is a random pop up, hopefully its not annoying.</p>
-    </div>
-    <!-- partial -->
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+
 
 
     <!-- Team Start -->
@@ -891,7 +860,7 @@
                 <div class="col-lg-3 col-md-12 text-lg-end">
 
 
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>yzjfund@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>yangzijiang@gmail.com</p>
                 </div>
 
 
@@ -901,7 +870,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Yangzijiang Fund</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">扬子江基金</a>, All Right Reserved.
                     </div>
 
                     <div class="col-md-6 text-center text-md-end">
@@ -934,7 +903,380 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
+
+
+
+        </div>
+
+
+    <div class="popup" id="popup1">
+        <h2>
+            飞骧科技
+        </h2>
+
+        <p>
+            领先的 5G 射频芯片及解决方案提供
+            商。飞骧科技是第一家发布 3G 和 4G
+            PA 芯片的厂商，也是当前产品线最完
+            整的国内 PA 厂商，产品兼容 MTK、高
+            通、展讯、联芯、Marvell 等各种主流
+            手机平台，已经形成了完整可销售的
+            4G/5G PA 和天线开关产品系列
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle('1')">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup2">
+        <h2>
+            宙讯科技
+        </h2>
+
+        <p>
+            领先的 4G/5G 射频芯片供应商。宙讯
+            科技成立于 2015 年，主要从事高性能
+            射频集成电路的设计、生产和销售。
+            公司以领先的专有射频微纳制造技
+            术、革新的射频前端架构及创新的射
+            频电路方案，致力于向市场提供高性
+            能、高性价比的射频前端集成电路产
+            品。芯片应用领域涉及智能手机、平
+            板电脑、基站、卫星定位导航设备等。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle('2')">关闭</button>
+
+    </div>
+
+    <div  class="popup" id="popup3">
+        <h2>
+            中科方寸
+        </h2>
+
+        <p>立足行业的智能化解决方案提供
+            商。中科方寸是全球为数不多拥有
+            “AI 芯片-平台-算法”全栈自研软硬
+            件产品和解决方案的公司之一。公
+            司基于自主研发的轻量化人工智能
+            和量化神经处理器，非对称图像视
+            频压缩、智鸢无人机及无人机管控
+            平台、AIOT 智能管控平台等多个产
+            品已成功落地于电力、石油化工等
+            行业，目前已与国家电网、南方电
+            网、中石化、中石油等多个高垄断
+            性垂直领域的头部企业达成合作
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(3)">关闭</button>
+
+    </div>
+
+
+    <div  class="popup" id="popup4">
+        <h2>
+            瑞识科技
+        </h2>
+
+        <p>
+            全球领先的 VCSEL 芯片和光学解决方
+            案提供商。瑞识科技是一家深耕半导
+            体光芯片领域的硬科技公司，致力于
+            为智能驾驶、消费电子、工业制造和
+            医疗美容等领域客户提供全球领先的
+            VCSEL 芯片和光学解决方案。瑞识拥
+            有国际领先的光芯片设计、光学集成
+            封装、算法研发、光电系统整合优化
+            等核心技术，并打通“芯片+光学+应
+            用”的全产业链条，推出自主研发的
+            全系列高性能 VCSEL 芯片和光学集成
+            产品，申请国内外技术发明专利超150
+            项，服务全球超过 100 家客户。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(4)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup5">
+        <h2>
+            劲芯微
+        </h2>
+
+        <p>
+            无线充电解决方案提供商。劲芯微成
+            立于 2013 年，是国内第一家无线充电
+            芯片公司，专注于无线充电，PD 快充，
+            MCU 等领域的芯片研发,是国家高新
+            技术企业、国家专精特新“小巨人”
+            企业。劲芯微电子的芯片开发核心团
+            队来自于美国国家半导体，NXP 以及
+            富士通，均为芯片设计领域的资深人
+            士，其中多位都在芯片行业拥有 20-30
+            年的丰富设计经验。未来，劲芯微电
+            子将推出更多具有竞争力的产品，致
+            力于成为国内外领先的芯片研发设计
+            公司
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(5)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup6">
+        <h2>
+            南砂晶圆
+        </h2>
+
+        <p>
+            国内头部碳化硅晶体材料生产商。
+            南砂晶圆是一家从事碳化硅单晶材
+            料研发、生产和销售三位一体的国
+            家高新技术企业，注册资本 2.81 亿
+            元。公司以山东大学晶体材料国家
+            重点实验室近年来研发的最新碳化
+            硅单晶生长与衬底加工技术成果为
+            基础，同山东大学开展全方位产学
+            研合作。公司产品以 6 英寸半绝缘
+            和 N 型碳化硅衬底为主，公司产品
+            已在各类用户使用或验证中。目前，
+            公司是广东省唯一一家可以规模化
+            生产碳化硅衬底晶片的企业。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(6)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup7">
+        <h2>
+            黑芝麻智能
+        </h2>
+
+        <p>
+            领先的车规级智能汽车计算芯片及基
+            于芯片的解决方案供应商。公司从用
+            于自动驾驶的华山系列高算力芯片开
+            始，最近推出了武当系列跨域计算芯
+            片，以满足对智能汽车先进功能的更
+            多样化及复杂需求。公司自有的车规
+            级产品及技术为智能汽车配备关键任
+            务能力，包括自动驾驶、智能座舱、
+            先进成像及互联等。通过由公司自行
+            研发的 IP 核、算法和支持软件驱动的
+            SOC 和基于 SoC 的解决方案，提供全
+            栈式自动驾驶能力以满足客户的广泛
+            需求
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(7)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup8">
+        <h2>
+            德尔科技
+        </h2>
+
+        <p>
+            德尔科技致力于氟化工全产业链布
+            局，主要从事氟化工基础材料、新能
+            源锂电材料、特种气体和半导体湿电
+            子化学品等多系列含氟新材料的研
+            发、生产和销售，是一家拥有核心自
+            主知识产权的国家级高新技术企业。
+            公司以氟化工基础材料无水氟化氢为
+            起点，主动面向国家重大需求、服务
+            国家战略，紧紧围绕含氟特种气体、
+            半导体湿电子化学品和新能源锂电材
+            料等国家战略新兴产业方向谋划发
+            展。德尔依靠科技创新，突破多个“卡
+            脖子”核心技术，开发系列进口替代
+            产品，打造了在含氟电子特气领域显
+            著的核心技术竞争力和行业地位。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(8)">关闭</button>
+
+    </div>
+
+
+    <div class="popup" id="popup9">
+        <h2>
+            至晟微
+        </h2>
+
+        <p>
+            集科研开发、生产运营、销售服务
+            于一体的多元化高新技术企业。至
+            晟微成立于 2016 年 12 月，由国内
+            外射频微波行业团队创办，专注于
+            射频微波 IC 设计。具有业内领先的
+            射频前端产品和微波毫米波电路开
+            发能力，技术覆盖材料工艺、器件
+            设计、建模、DOE 和微波电路、组
+            件研发工作，精通 IIIV 化合物半导
+            体产品开发程。经多年技术积累和
+            产品的不断革新升级，当前已成为
+            业内领先水平的通信产品 IC 设计公
+            司。主要业务范围覆盖 IoT/PA，基
+            站 PA，手机 PA 等产品路线及研发
+            方向
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(9)">关闭</button>
+
+    </div>
+
+
+    <div class="popup" id="popup10">
+        <h2>
+            阜时科技
+        </h2>
+
+        <p>
+            人工智能感知芯片设计商。阜时科技是集成电路设计企业，国家高新技术企业，广东省人机交互传感器工程技术研究中心，专注于智能传感器、处理器芯片的研发设计及配套算法开发，致力于推动人机交互技术的智能化升级。公司具有完整的芯片设计、软硬件支持、核心算法开发等能力，已成功量产应用于一线厂商。坚持在人机交互领域保持前瞻性，自主研发、规模投入，打造有技术壁垒、持续创新的优质产品，满足客户不同层次的需求，业绩处于高速成长期。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(10)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup11">
+        <h2>
+            昆宇电源
+        </h2>
+
+        <p>
+            领先的智慧锂电整体解决方案提供商。昆宇电源是锂电行业领先的科技型企业，拥有30余年的技术及产品开发经验，矢志成为全球化智慧锂电整体解决方案提供商，为全球客户提供高品质的产品与服务。产品及服务目前已覆盖全球60多个国家和地区，其中通信储能类锂电产品位列全球出货量第一。公司是多家世界一流的通信企业基站储能核心供应商。国内与中国移动、中国铁塔、中兴通讯等通信领军企业建立了合作关系，海外与一流通信行业企业达成了长久的深度合作
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(11)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup12">
+        <h2>
+            昂瑞微
+        </h2>
+
+        <p>
+            昂瑞微是一家深耕射频前端和无线通信领域、多元化前瞻布局的复合型芯片设计公司。公司拥有基于CMOS、GaAs、SiGe、SOI、GaN等工艺的芯片设计和大规模量产经验，核心产品线涵盖六大类，超四百款芯片。关键指标和品质媲美世界一流厂商同类产品，主要应用于智能手机、汽车电子、储能、工业、高性能计算、物联网、智能穿戴等领域。公司通过深入布局具有技术协同、市场协同、供应链协同的赛道，致力于打造具有超强竞争力的模拟/射频/器件领域的世界级芯片公司
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(12)">关闭</button>
+
+    </div>
+
+
+    <div class="popup" id="popup13">
+        <h2>
+            芯带科技
+        </h2>
+
+        <p>
+            芯带科技成立于2021年，总部位于无锡高新区，创始团队由硅谷芯片设计和无线通讯领域的顶级专家组成，在5G、Wi-Fi、IC设计等领域有数十年的技术积累和成功案例。公司主要从事硬件和软件设计及产品的市场应用拓展，产品将广泛应用于车载车联、宽带物联、通讯网络、智能家电等。目前在5G、Wi-Fi、IC设计等领域已有着丰富的技术积累和成功案例，并致力于开发全球第一块Wi-Fi和5G双标基带SoC，提供通讯、智能、边缘计算一体化的芯片平台
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(13)">关闭</button>
+
+    </div>
+
+
+    <div class="popup" id="popup14">
+        <h2>
+            安牧泉
+        </h2>
+
+        <p>
+            安牧泉智能致力于高端芯片的先进封装与测试，满足高端芯片的定制化封装需求，为全球客户提供全方位的技术支持及整体解决方案。安牧泉由国家特聘专家朱文辉博士创建，专注于集成电路先进封装与产品、封装工艺软件开发，依托国际先进的系统级封装技术解决关键核心器件如CPU，DSP，GPU，SSD，IGBT等的自主制造问题，是湖南省唯一一家具备世界先进水平的半导体封装与测试公司，填补了湖南省和长沙市高端芯片封装的空白。公司将致力成为中国首屈一指的高端芯片先进封装与测试公司。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(14)">关闭</button>
+
+    </div>
+
+
+    <div class="popup" id="popup15">
+        <h2>
+            同源康医药
+        </h2>
+
+        <p>
+            同源康医药是一家立足中国、面向国际的创新型生物医药高科技公司，在浙江湖州长兴经济开发区的大力支持下，于长兴生命科学园建立了3000m2新药研发中心，拥有全球一流的新药研发实验室以及文献情报中心。在上海建立了临床医学部和商务拓展部。同源康医药拥有一流的研发及管理团队，包括国家千人计划专家1人、浙江千人计划专家1人、海归博士专家10人和临床专家3人，拥有丰富的知名跨国药企新药研发经验，是国内极少数拥有药物研发和生产能力的创新型生物医药高科技公司
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(15)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup16">
+        <h2>
+            象帝先
+        </h2>
+
+        <p>
+            象帝先是一家高端GPU处理器芯片设计公司，由原龙芯和海光创始人、中国高端处理器芯片的开拓者唐志敏先生创设和领军。公司与Imagination签署了最高级别的GPU IP架构级授权协议，成为全球继苹果之后第一家获得该级别授权企业。公司已完成与麒麟、统信、中科方德、windows等主要操作系统，完成与清华同方、长城、联想、浪潮、新华三等整机厂商认证和产品导入，已经达到英伟达2019年GTX1660TI的水平，远远领先于国内同业产品。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(16)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup17">
+        <h2>
+            至信微
+        </h2>
+
+        <p>
+            至信微专注于专注于第三代半导体碳化硅芯片研发设计，以行业领先的碳化硅MOSFET及相关模组系列产品，专攻光伏新能源、电力系统、医疗设备、消费电子、智能家居等各大行业需求，广获行业高端品牌认可，持续为客户提供全链路的碳化硅功率器件解决方案。公司目前已经成功研发出1200V-1700V系列碳化硅MOSFETs，性能参数均已达到世界先进水平，并可以提供车规等级产品。至信微1200V 80mQ产品目前的量产良率已经达到了95%，远远领先于业内水平。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(17)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup18">
+        <h2>
+            达新半导体
+        </h2>
+
+        <p>
+            达新半导体是中外合资的国家级高新技术企业，公司从事IGBT、MOSFET、FRD等功率半导体芯片与器件的设计、制造和销售，并提供相关的应用解决方案。公司具备芯片设计、晶圆制造、模块制造及应用的完整IGBT产业链。公司在8寸及6寸晶圆制造平台成功开发600V-3300V IGBT芯片产品，芯片电流等级涵盖10A～200A。采用自主IGBT芯片，推出了系列化的满足工业应用、消费电子、新能源的IGBT模块，模块电压涵盖600V～1700V，电流等级涵盖10A ～ 800A。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(18)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup19">
+        <h2>
+            中茵微
+        </h2>
+
+        <p>
+            中国IC设计先进技术平台的领导者。中茵微是一家专注于做先进制程工艺IC设计，致力于IP自主研发和服务、赋能芯片设计和SoC定制解决方案的技术平台公司，主要面向高性能计算、数据中心、5G通信、人工智能、汽车电子等领域。公司拥有顶尖的全球资深技术专家团队并积累了优秀的产业资源，致力于利用全球领先的集成电路设计平台，为客户提供先进制程IP、一站式的高端SoC定制以及Chiplet&先进封装产品。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(19)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup20">
+        <h2>
+            怡洋半导体
+        </h2>
+
+        <p>
+            怡洋半导体定位于打造全球领先的SiC晶圆代工厂，对标X-fab，汉磊；目前已同国内知名代工达成战略合作，怡洋半导体将以最高效方式锁定核心机台设备并推进完成SiC产品通线及量产。公司拥有国内及亚洲顶尖的技术专家和建厂专家团队，具备丰富的产线运营及功率产品工艺开发经验，掌握SiC器件全工艺流程核心技术，具备产线通线能力，能够快速建立起具备世界竞争力的SiC器件代工厂。怡洋半导体目前已在实质推进SiC产线用核心机台设备的采购。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(20)">关闭</button>
+
+    </div>
+
+    <div class="popup" id="popup21">
+        <h2>
+            中科极化
+        </h2>
+
+        <p>
+            中科极化是由中科院精密测量院与联影医疗共同发起成立的集医疗器械研发、生产、销售于一体的高新技术企业公司，公司与国内多家知名三甲医院如中国人民解放军总医院、华中科学技术大学同济医学院附属同济医院、湖北省肿瘤医院、武汉市金银潭医院等开展临床科研转化合作。公司核心产品之一“医用氙气体发生器”已获批医疗器械注册证，抢先美国竞品成为全球首个获批注册证的该类产品。另一核心产品“多核磁共振成像系统”也于2023年8月份获批国内首张三类医疗器械注册证。
+        </p>
+        <button   class="btn btn-lg btn-primary rounded-0 popCloseBtn" onclick="toggle(21)">关闭</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
