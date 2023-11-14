@@ -645,6 +645,7 @@
 
 .popup{
     position:fixed;
+    text-align: justify;
     top: 40%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -709,4 +710,19 @@
     margin-bottom: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.team-item{
+    height: 100%;
+}
+.team-intro{
+    height: 80%;
+    text-align: justify; /* 设置文本两端对齐 */
+    text-justify: inter-ideograph;
+}
+
+
+.team-intro p {
+
+    text-align: justify; /* 防止段落内的文本重置为左对齐 */
+    text-justify: inter-ideograph;
 }
