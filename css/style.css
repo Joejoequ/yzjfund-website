@@ -726,3 +726,20 @@
     text-align: justify; /* 防止段落内的文本重置为左对齐 */
     text-justify: inter-ideograph;
 }
+.news-content{
+    width: 60%;
+
+}
+.news-container{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.news-content {
+    text-align: center;
+}
+.news-img{
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
