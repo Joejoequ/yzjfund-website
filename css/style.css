@@ -728,18 +728,21 @@
 }
 .news-content{
     width: 60%;
-
+    text-align: center;
 }
 .news-container{
     display: flex; justify-content: center; align-items: center;
 }
 
-.news-content {
-    text-align: center;
-}
-.news-img{
+
+.news-img {
     width: 60%;
     margin-top: 10px;
     margin-bottom: 20px;
 
 }
+
+.news-content .news_txt{
+    text-align: justify;
+}
+
