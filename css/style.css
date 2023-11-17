@@ -715,7 +715,7 @@
     height: 100%;
 }
 .team-intro{
-    height: 80%;
+    height: 90%;
     text-align: justify; /* 设置文本两端对齐 */
     text-justify: inter-ideograph;
 }
@@ -742,7 +742,28 @@
 
 }
 
+
+
 .news-content .news_txt{
     text-align: justify;
+
+    line-height: 1.5;
+}
+
+
+.team-intro_en{
+    height: 90%;
+    text-align: justify; /* 设置文本两端对齐 */
+    text-justify: inter-ideograph;
+}
+
+
+.team-intro_en p {
+
+    text-align: justify; /* 防止段落内的文本重置为左对齐 */
+
+}
+.news-link a{
+    white-space: pre-wrap;
 }
 
