@@ -699,23 +699,30 @@
         flex: 0 0 20%;
         max-width: 20%;
     }
+
+    .custom-col_en {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
 }
 
 .team-name {
     background-color: #f6f6f6;
 }
 
+
+
 .team-margin{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .team-item{
     height: 100%;
 }
 .team-intro{
-    height: 90%;
+    height: 80%;
     text-align: justify; /* 设置文本两端对齐 */
     text-justify: inter-ideograph;
 }
@@ -755,15 +762,21 @@
     height: 90%;
     text-align: justify; /* 设置文本两端对齐 */
     text-justify: inter-ideograph;
+
 }
 
 
 .team-intro_en p {
 
     text-align: justify; /* 防止段落内的文本重置为左对齐 */
+    font-size: 18px;
 
 }
 .news-link a{
     white-space: pre-wrap;
 }
 
+#team-container{
+    display: flex;
+    justify-content: center;
+}
