@@ -772,6 +772,7 @@
     font-size: 18px;
 
 }
+
 .news-link a{
     white-space: pre-wrap;
 }
@@ -779,4 +780,12 @@
 #team-container{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width: 80%; /* 调整弹出框的宽度，根据需要进行调整 */
+        
+    }
+
 }
