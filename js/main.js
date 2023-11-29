@@ -142,4 +142,101 @@ for (let i = 0; i < elementsWithPopClose.length; i++) {
 }
 
 
+// 获取表单元素
+const form = document.querySelector('#form_ch');
+if (form !== null) {
+    // 监听表单提交事件
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); // 阻止默认提交行为
+
+        let name = document.getElementById("name");
+        let phone = document.getElementById("phone");
+        let msg = document.getElementById("message");
+
+        const data = {
+            name: name.value,
+            phone: phone.value,
+            message: msg.value
+        };
+        // 将formData对象转换为JSON字符串
+        const jsonData = JSON.stringify(data);
+
+        // 使用Fetch API发送POST请求
+        fetch('https://api.yzjfund.com/sendEmail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // 指定请求的内容类型为JSON
+            },
+            body: jsonData,
+        })
+            .then((response) => {
+                if (response.ok) {
+                    // 请求成功，可以根据需要进行处理
+                    alert('发送成功');
+                    name.value="";
+                    phone.value="";
+                    msg.value="";
+
+                } else {
+                    // 请求失败，可以根据需要进行处理
+                    alert('发送失败');
+                }
+            })
+            .catch((error) => {
+                // 发生网络错误
+                alert('网络错误');
+                console.error('网络错误', error);
+            });
+    });
+}
+
+
+
+// 获取表单元素
+const form_en = document.querySelector('#form_en');
+if (form_en !== null) {
+// 监听表单提交事件
+    form_en.addEventListener('submit', (e) => {
+        e.preventDefault(); // 阻止默认提交行为
+
+        let name = document.getElementById("name_en");
+        let phone = document.getElementById("phone_en");
+        let msg = document.getElementById("message_en");
+
+        const data = {
+            name: name.value,
+            phone: phone.value,
+            message: msg.value
+        };
+        // 将formData对象转换为JSON字符串
+        const jsonData = JSON.stringify(data);
+
+        // 使用Fetch API发送POST请求
+        fetch('https://api.yzjfund.com/sendEmail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // 指定请求的内容类型为JSON
+            },
+            body: jsonData,
+        })
+            .then((response) => {
+                if (response.ok) {
+                    // 请求成功，可以根据需要进行处理
+                    alert('Sent Successfully');
+                    name.value = "";
+                    phone.value = "";
+                    msg.value = "";
+
+                } else {
+                    // 请求失败，可以根据需要进行处理
+                    alert('Sent Failed');
+                }
+            })
+            .catch((error) => {
+                // 发生网络错误
+                alert('Network Error');
+                console.error('网络错误', error);
+            });
+    });
+}
 
