@@ -718,6 +718,13 @@
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
+.team-margin_en{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 .team-item{
     height: 100%;
 }
@@ -759,7 +766,7 @@
 
 
 .team-intro_en{
-    height: 90%;
+    height: 60%;
     text-align: justify; /* 设置文本两端对齐 */
     text-justify: inter-ideograph;
 
