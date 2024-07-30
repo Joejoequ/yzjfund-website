@@ -1,0 +1,827 @@
+/********** Template CSS **********/
+:root {
+  --primary: rgb(3, 112, 115);
+  --light: #F5F5F5;
+  --dark: #353535;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-black {
+  font-weight: 900 !important;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+  font-weight: 500;
+  transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #FFFFFF;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link  {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav {
+    border-top: 1px solid #EEEEEE;
+  }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+  height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+  top: -100px;
+  transition: .5s;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+  }
+}
+
+
+/*** Header ***/
+@media (max-width: 768px) {
+  .header-carousel .owl-carousel-item {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .header-carousel .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .header-carousel .owl-carousel-item h5,
+  .header-carousel .owl-carousel-item p {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+
+  .header-carousel .owl-carousel-item h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+.header-carousel .owl-nav {
+  position: absolute;
+  width: 200px;
+  height: 45px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  font-size: 22px;
+  transition: .5s;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.header-carousel .owl-dots {
+  position: absolute;
+  height: 45px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  transition: .5s;
+}
+
+.header-carousel .owl-dot::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 4px;
+  left: 4px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+.header-carousel .owl-dot.active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.page-header {
+  background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../public/img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
+}
+
+
+/*** Section Title ***/
+.section-title h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+}
+
+.section-title.text-start h1 {
+  padding-left: 0;
+}
+
+.section-title h1::before,
+.section-title h1::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 5px;
+  bottom: 0;
+  background: var(--dark);
+}
+
+.section-title h1::before {
+  left: 0;
+}
+
+.section-title h1::after {
+  right: 0;
+}
+
+.section-title.text-start h1::before {
+  display: none;
+}
+
+
+/*** About ***/
+@media (min-width: 992px) {
+  .container.about {
+    max-width: 100% !important;
+  }
+
+  .about-text  {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-text  {
+    padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-text  {
+    padding-right: calc(((100% - 1320px) / 2) + .75rem);
+  }
+}
+
+
+/*** Service ***/
+.service-item img {
+  transition: .5s;
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+}
+
+
+/*** Feature ***/
+@media (min-width: 992px) {
+  .container.feature {
+    max-width: 100% !important;
+  }
+
+  .feature-text  {
+    padding-left: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-text  {
+    padding-left: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .feature-text  {
+    padding-left: calc(((100% - 1320px) / 2) + .75rem);
+  }
+}
+
+
+/*** Project Portfolio ***/
+#portfolio-flters li {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: .5s;
+  border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.portfolio-item img {
+  transition: .5s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-item .portfolio-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 50%;
+  background: rgba(53, 53, 53, .7);
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.portfolio-item .portfolio-overlay .btn {
+  opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay .btn {
+  opacity: 1;
+}
+
+
+/*** Quote ***/
+@media (min-width: 992px) {
+  .container.quote {
+    max-width: 100% !important;
+  }
+
+  .quote-text  {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .quote-text  {
+    padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .quote-text  {
+    padding-right: calc(((100% - 1320px) / 2) + .75rem);
+  }
+}
+
+
+/*** Team ***/
+.team-item img {
+  transition: .5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item .team-social {
+  position: absolute;
+  width: 38px;
+  top: 50%;
+  left: -38px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  transition: .5s;
+}
+
+.team-item .team-social .btn {
+  color: var(--primary);
+  background: #FFFFFF;
+}
+
+.team-item .team-social .btn:hover {
+  color: #FFFFFF;
+  background: var(--primary);
+}
+
+.team-item:hover .team-social {
+  left: 0;
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.testimonial-carousel::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .testimonial-carousel::before,
+  .testimonial-carousel::after {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial-carousel::before,
+  .testimonial-carousel::after {
+    width: 300px;
+  }
+}
+
+.testimonial-carousel .owl-item .testimonial-text {
+  border: 5px solid var(--light);
+  transform: scale(.8);
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+  transform: scale(1);
+}
+
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  width: 350px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: .5s;
+  z-index: 1;
+}
+
+.testimonial-carousel:hover .owl-nav {
+  width: 300px;
+  opacity: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  position: relative;
+  color: var(--primary);
+  font-size: 45px;
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  color: var(--dark);
+}
+
+
+/*** Contact ***/
+@media (min-width: 992px) {
+  .container.contact {
+    max-width: 100% !important;
+  }
+
+  .contact-text  {
+    padding-left: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-text  {
+    padding-left: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-text  {
+    padding-left: calc(((100% - 1320px) / 2) + .75rem);
+  }
+}
+
+
+/*** Footer ***/
+.footer {
+  background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../public/img/footer.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid #FFFFFF;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .copyright a:hover {
+  color: var(--primary);
+}
+
+
+
+
+
+
+
+
+#logo {
+  margin-right: 20px; /* 适当调整右边距的值 */
+}
+
+.my-map { margin: 0 auto; width: 100%; height: 100%; } .my-map .icon { background: url(//a.amap.com/lbs-dev-yuntu/static/web/image/tools/creater/marker.png) no-repeat; } .my-map .icon-cir { height: 31px; width: 28px; } .my-map .icon-cir-red { background-position: -11px -5px; }
+.amap-container{height: 100%;}
+
+#blur.active{
+  filter:blur(20px);
+  pointer-events: none;
+  user-select: none;
+
+}
+
+.popup{
+  position:fixed;
+  text-align: justify;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding:50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30) ;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+  display: flex; /* 使用 Flex 布局 */
+  flex-direction: column; /* 垂直布局，标题、文本和按钮堆叠在一起 */
+  align-items: center; /* 水平居中 */
+
+
+
+
+
+}
+.popup.active{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  top:50%;
+
+
+}
+.popup h2{
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+.popup button{
+  font-weight: 300;
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary);
+}
+
+.scroll-locked {
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .custom-col {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .custom-col_en {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+
+.team-name {
+  background-color: #f6f6f6;
+}
+
+
+
+.team-margin{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.team-margin_en{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.team-item{
+  height: 100%;
+}
+.team-intro{
+  height: 80%;
+  text-align: justify; /* 设置文本两端对齐 */
+  text-justify: inter-ideograph;
+}
+
+
+.team-intro p {
+
+  text-align: justify; /* 防止段落内的文本重置为左对齐 */
+  text-justify: inter-ideograph;
+}
+.news-content{
+  width: 60%;
+  text-align: center;
+}
+.news-container{
+  display: flex; justify-content: center; align-items: center;
+}
+
+
+.news-img {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+
+
+.news-content .news_txt{
+  text-align: justify;
+
+  line-height: 1.5;
+}
+
+
+.team-intro_en{
+  height: 60%;
+  text-align: justify; /* 设置文本两端对齐 */
+  text-justify: inter-ideograph;
+
+}
+
+
+.team-intro_en p {
+
+  text-align: justify; /* 防止段落内的文本重置为左对齐 */
+  font-size: 18px;
+
+}
+
+.news-link a{
+  white-space: pre-wrap;
+}
+
+#team-container{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 80%; /* 调整弹出框的宽度，根据需要进行调整 */
+
+  }
+  .custom-scrollbar {
+
+    height: 45vh; /* 设置滚动条容器的高度 */
+    overflow: hidden; /* 隐藏内容溢出部分 */
+    position: relative;
+  }
+
+  /* 定义滚动内容区域 */
+  .scroll-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 启用内容区域的滚动 */
+  }
+
+  /* 定义自定义滚动条样式 */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px; /* 设置滚动条宽度 */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* 设置滚动条滑块颜色 */
+    border-radius: 5px; /* 设置滚动条滑块圆角 */
+  }
+
+}
+
+
+.popup h2{
+  text-align: center;
+}
+
