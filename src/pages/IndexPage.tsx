@@ -18,7 +18,7 @@ function IndexPage() {
     useEffect(() => {
 
         const script = document.createElement('script');
-        script.src = 'https://webapi.amap.com/maps?v=1.3&key=f61275c66e2e3990d40fdb3115eae8e9&callback=onLoad';
+        script.src = 'https://webapi.amap.com/maps?v=1.3&key=c82507d63102309828f81c0465f558d9&callback=onLoad';
         script.type = 'text/javascript';
         script.async = true;
 

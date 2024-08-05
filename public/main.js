@@ -74,9 +74,7 @@ var initialize =  function initializeHeaderCarousel() {
 
 var mapInitialize =  function createMap(){
 
-    window._AMapSecurityConfig = {
-        securityJsCode:'085e1d2e84014eb3206b6d04dae52f78',
-    }
+
     var map = new AMap.Map('mapContainer', {
         viewMode: '2D',  // 默认使用 2D 模式
         zoom:18,  //初始化地图层级

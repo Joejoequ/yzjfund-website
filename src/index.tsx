@@ -10,6 +10,19 @@ import i18n from './i18n';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+declare global {
+    interface Window {
+        _AMapSecurityConfig: {
+            securityJsCode: string;
+        };
+    }
+}
+
+window._AMapSecurityConfig = {
+    securityJsCode: "46b9d7267686c91531ef5601868b750b",
+};
+
 root.render(
     <React.StrictMode>
         <I18nextProvider i18n={i18n}>
